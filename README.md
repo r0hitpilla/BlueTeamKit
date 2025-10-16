@@ -49,3 +49,7 @@ Run RansomSim detection scripts
 ```bash
 python src/ransomsim.py
 ```
+
+## Author
+Rohit Pilla  
+Email: rohitpilla0101@gmail.com 
