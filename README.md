@@ -15,33 +15,37 @@ BlueTeamKit is a set of mini Blue Team projects for defensive cybersecurity and 
 ## Quickstart
 
 ### 1. Clone the repo (if not already)
-
+```bash
 git clone https://github.com/r0hitpilla/BlueTeamKit.git
 cd BlueTeamKit
+```
 
 ### 2. Install dependencies
 
-If Python projects are included
-
+#If Python projects are included
+```bash
 python -m venv venv
 source venv/bin/activate  # Linux / Mac
 venv\Scripts\activate     # Windows
 
 pip install -r requirements.txt
-
+```
 ### 3. Run each mini-project
 
 python -m src.vulneye --inventory assets/sample_inventory.json --output docs/vulnerability_report.html
 
-**HomeSoc/ Threatflow/ RansomSim**
+HomeSoc/ Threatflow/ RansomSim
 Follow individual project instructions in their folders. Typically:
 
-# Start HomeSOC ELK stack (if included)
+Start HomeSOC ELK stack (if included)
+```bash
 docker-compose up -d
-
-# Run ThreatFlow scripts
+```
+Run ThreatFlow scripts
+```bash
 python src/threatflow.py
-
-# Run RansomSim detection scripts
+```
+Run RansomSim detection scripts
+```bash
 python src/ransomsim.py
-
+```
