@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Docker / logs / elasticsearch data
+esdata/
+*.log
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,10 @@
+# Simple detection rules (YAML conceptual)
+- id: multiple_failed_ssh
+  description: "Multiple failed SSH logins"
+  query: 'event.module: "system" AND event.dataset: "auth" AND message: "Failed password"'
+  threshold: { count: 5, timeframe: "5m" }
+  mitre: ["T1110"]
+- id: suspicious_powershell
+  description: "Suspicious PowerShell command"
+  query: 'process.name: "powershell.exe" AND process.args: "*EncodedCommand*"'
+  mitre: ["T1059.001"]
